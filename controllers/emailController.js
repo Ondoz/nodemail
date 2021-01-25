@@ -17,8 +17,12 @@ exports.index = async (req, res)  => {
             port: 465,
             secure: true, // true for 465, false for other ports
             auth: {
-            user: "noreply@oaktree.id", // generated ethereal user
-            pass: "U_h1t9f5", // generated ethereal password
+                user: "noreply@oaktree.id", // generated ethereal user
+                pass: "U_h1t9f5", // generated ethereal password
+            },
+            tls: {
+                // do not fail on invalid certs
+                rejectUnauthorized: false
             },
         });
 

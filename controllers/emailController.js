@@ -20,6 +20,9 @@ exports.index = async (req, res)  => {
                 user: "noreply@oaktree.id", // generated ethereal user
                 pass: "U_h1t9f5", // generated ethereal password
             },
+            tls: {
+                rejectUnauthorized: false
+            }
             
         });
 

@@ -41,8 +41,9 @@ exports.index = async (req, res)  => {
             status: "success",
             message: "Email successfully",
             data: null
-        }) 
+        })  
     } catch(err){
+        console.log(err)
         res.status(500).send(err)
     }
     

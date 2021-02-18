@@ -8,6 +8,17 @@
     <title>Document</title>
 
     <style>
+        html{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            /* height:100%; */
+            margin: 0;
+            padding: 0;
+            /* background:#eeeeee; */
+        }
         .container {
             /* position: absolute; */
             width: 610px;
@@ -55,7 +66,7 @@
         }
 
         .address {
-            padding: 26px 132px 0px;
+            padding: 14px 132px 0px;
         }
 
         .f-14 {
@@ -66,7 +77,7 @@
             position: absolute;
             width: 238px;
             height: 54px;
-            left: 560px;
+            left: 557px;
             top: 358px;
             text-align: center;
             color: #fff;
@@ -76,7 +87,6 @@
             box-shadow: 2px 3px 10px rgba(81, 193, 173, 0.3);
             border-radius: 5px;
             font-size: 18px;
-            font-family: Roboto;
             font-style: normal;
         }
 
@@ -84,7 +94,7 @@
             position: absolute;
             width: 280px;
             height: 29px;
-            left: 452px;
+            /* left: 452px; */
             top: 165px;
         }
 
@@ -92,7 +102,7 @@
             position: absolute;
             width: 455px;
             height: 112px;
-            left: 451px;
+            /* left: 451px; */
             top: 214px;
         }
 
@@ -101,7 +111,7 @@
             position: absolute;
             width: 455px;
             height: 112px;
-            left: 451px;
+            /* left: 451px; */
             top: 460px;
         }
 
@@ -109,71 +119,79 @@
             position: absolute;
             width: 181px;
             height: 74px;
-            left: 454px;
+            /* left: 454px; */
             top: 584px;
         }
     </style>
 
 </head>
 
-<body>
+<body  style="width: 610px;
+height: 833px;">
 
-    <center>
-        <div class="container">
-            <div class="header">
-                <img class="pt-3" src="https://dummy.rimbahouse.com/assets/images/bg-icon.png" alt="Card image cap">
+<center>
+    <div class="container" style="width: 610px;
+        height: 833px;
+        /* left: 375px; */
+        top: 29px;
+
+        background: #FFFFFF;
+        box-shadow: 2px 2px 18px -3px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;">
+        <div class="header">
+            <img class="pt-3" src="https://dummy.rimbahouse.com/assets/images/bg-icon.png" alt="Card image cap">
+        </div>
+
+        <div class="content">
+            <h2 class="name-user">
+                Hey User,
+            </h2>
+            <p class="text-content">
+                Our system detects to change your password, is this really you?
+                <br><br>
+                If so, we provide a link to enter your new password. to change your old password, please click the
+                Button below.
+            </p>
+
+            <a href="{{ url }}" class="btn-reset">
+                <p>
+                    Reset Your password
+                </p>
+            </a>
+
+            <p class="text-content2">
+                Thank you to user who have always supported this application.
+                <br><br>
+                We Oaktree Team are willing to serve you well. If there is an error with this application please
+                contact us.
+            </p>
+
+            <p class="text-content3">
+                Thanks,
+                <br>
+                The Oaktree Team.
+            </p>
+        </div>
+
+
+        <div class="footer">
+            <div class="address">
+                Pluit Karang Cantik Blok i3T No.58A, RT.3 / RW.3, Pluit, Penjaringan, North Jakarta City, Jakarta
+                11450
             </div>
-
-            <div class="content">
-                <h2 class="name-user">
-                    Hey User,
-                </h2>
-                <p class="text-content">
-                    Our system detects to change your password, is this really you?
-                    <br><br>
-                    If so, we provide a link to enter your new password. to change your old password, please click the
-                    Button below.
-                </p>
-
-                <a href="{{ url }}" class="btn-reset">
-                    <p>
-                        Reset Your password
-                    </p>
-                </a>
-
-                <p class="text-content2">
-                    Thank you to user who have always supported this application.
-                    <br><br>
-                    We Oaktree Team are willing to serve you well. If there is an error with this application please
-                    contact us.
-                </p>
-
-                <p class="text-content3">
-                    Thanks,
-                    <br>
-                    The Oaktree Team.
-                </p>
+            <div class="pt-3">
+                <img src="https://dummy.rimbahouse.com/assets/images/icon-envelope.svg" alt="mail">
+                <img src="https://dummy.rimbahouse.com/assets/images/icon-phone.svg" alt="phone">
             </div>
-
-
-            <div class="footer">
-                <div class="address">
-                    Pluit Karang Cantik Blok i3T No.58A, RT.3 / RW.3, Pluit, Penjaringan, North Jakarta City, Jakarta
-                    11450
-                </div>
-                <div class="pt-3">
-                    <img class="pt-3" src="https://dummy.rimbahouse.com/assets/images/icon-envelope.svg" alt="mail">
-                    <img class="pt-3" src="https://dummy.rimbahouse.com/assets/images/icon-phone.svg" alt="phone">
-                </div>
-                <div class="pt-3">
-                    <u>Privacy Policy Term & Conditions</u>
-                </div>
-                <div class="f-14 pt-3">
-                    © 2021 Oaktree. All rights reserved.
-                </div>
+            <div class="pt-3">
+                <u>Privacy Policy Term & Conditions</u>
+            </div>
+            <div class="f-14">
+                © 2021 Oaktree. All rights reserved.
             </div>
         </div>
-    </center>
+    </div>
+</center>
 
 
 </body>

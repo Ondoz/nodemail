@@ -2,7 +2,7 @@
 let router = require('express').Router()
 
 const emailController = require('../controllers/emailController')
-const waController = require('../controllers/waController')
+// const waController = require('../controllers/waController')
 
 
 router.route('/email')

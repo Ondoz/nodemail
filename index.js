@@ -5,7 +5,6 @@ const app = express()
 const port = 3000
 const path = require('path');
 // const venom = require('venom-bot');
-const multer = require('multer');
 
 // Import routes
 const apiRoutes = require("./routes/api")

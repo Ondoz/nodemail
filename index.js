@@ -5,7 +5,7 @@ const app = express()
 const port = 3000
 const path = require('path');
 // const venom = require('venom-bot');
-
+const multer = require('multer');
 
 // Import routes
 const apiRoutes = require("./routes/api")
@@ -44,6 +44,26 @@ app.get('/', (req, res) => res.send('root'))
 //         message: "Message send successfully"
 //     })
 // })
+// app.post('/wa/send/file', async function (req, res) {
+//     let number  = req.body.phonenumber
+//     let message = req.body.message
+//
+//     await session
+//         .sendText(number + '@c.us', message)
+//         .then((result) => {
+//             console.log('Result: ', result); //return object success
+//
+//         })
+//         .catch((erro) => {
+//             console.error('Error when sending: ', erro); //return object error
+//         });
+//
+//     res.json({
+//         status: "success",
+//         message: "Message send successfully"
+//     })
+// })
+
 
 // Use Api routes in the App
 app.use('/api', apiRoutes)
